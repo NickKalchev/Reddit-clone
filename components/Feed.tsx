@@ -17,7 +17,7 @@ function Feed({ topic }: Props) {
     const posts: Post[] = !topic ? data?.getPostList : data?.getPostListByTopic; 
 
     return (
-        <div className="mt-5 space-y-4">
+        <div className="mt-8 space-y-4">
             {posts?.map(post => (
                 <Post key={post.id} post={post} />
             ))}
